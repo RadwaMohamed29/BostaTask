@@ -31,6 +31,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <constraints>
+                <constraint firstItem="TnE-j8-Aqr" firstAttribute="width" secondItem="njF-e1-oar" secondAttribute="width" multiplier="0.9625" id="HgY-ad-dgN"/>
+                <constraint firstItem="TnE-j8-Aqr" firstAttribute="height" secondItem="njF-e1-oar" secondAttribute="height" id="wJv-Wz-8yD"/>
+            </constraints>
             <connections>
                 <outlet property="albumNameLbl" destination="TnE-j8-Aqr" id="ixb-0R-qii"/>
             </connections>
