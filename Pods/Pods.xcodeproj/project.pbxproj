@@ -1,0 +1,1211 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0231BF88DE78D1AF701640162F641EF1 /* KRActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B06E4AF59C7F3A48D76E612736D700DE /* KRActivityIndicatorView.swift */; };
+		17DE87344CAD319DE6AA0F7BE1BA10C7 /* ReachabilitySwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F8CF875510C75A88216B06B844BF839 /* ReachabilitySwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		210DD290122BB0C7A0E83DC5148D724E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2B117F7A3CB312FF54BFF9D46B0180 /* Foundation.framework */; };
+		227F575C7A4BA4B60D7CED084C9B4A3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2B117F7A3CB312FF54BFF9D46B0180 /* Foundation.framework */; };
+		2468408EA9C033EE2EEDF299032A382B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2B117F7A3CB312FF54BFF9D46B0180 /* Foundation.framework */; };
+		28FE5CF2996BE7E3118F17C97A992D6B /* Pods-BostaTask-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B199BAD9FF7F1DD26C82697797160612 /* Pods-BostaTask-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32DAFD5267320A0E445C44D5B0A8A3E6 /* KRActivityIndicatorView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B8C48100E6CE52186B762F53845C2405 /* KRActivityIndicatorView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F7778471962690BAD73A12905D615F7 /* LPSnackbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B127138F19D65B6BC11E74B4B23B7140 /* LPSnackbar.swift */; };
+		5433D9B1A7004CEBF4CA2F1FEEBCAB38 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2544C3A1631BACBD2FC964E079CB6787 /* CoreTelephony.framework */; };
+		5BF5CE60210BA63B24F47DA85DB6D541 /* KRProgressHUDIconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E742614E592AFA324058A8264FBB8C /* KRProgressHUDIconType.swift */; };
+		5EDD32C82B9EE160E6615CEAEFCA1A15 /* KRProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9477A8342447603B5D09908363F7C1AC /* KRProgressHUD.swift */; };
+		664296435583DFE0E7F51D03A05D5E46 /* KRActivityIndicatorView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B97E71D1DA6FD8011554AF58CEAD59E0 /* KRActivityIndicatorView-dummy.m */; };
+		7EA3511AA0071BCF980A2FA04758D6A9 /* LPSnackbar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C5A67620DE5B4D5BF1C54EB28C58EA23 /* LPSnackbar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93DE5DC6D98B5DD09860532E35AE7C90 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8600D47A402BFF4D6115152C4674E704 /* SystemConfiguration.framework */; };
+		9416B584E4A30B8AA843D0EA19AA95FF /* LPSnackbar.h in Headers */ = {isa = PBXBuildFile; fileRef = C9D173BAB4113245952AC8531E6B1F0A /* LPSnackbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		960DCEE9167C9C9E11FAA0EDAF872B2F /* ReachabilitySwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12BF144CAB78547BA21833333CCB1315 /* ReachabilitySwift-dummy.m */; };
+		9B527DB69280CF80AABF664A88202E84 /* KRProgressHUD-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 64811497C4E4E046358C3D5105EDCB5A /* KRProgressHUD-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A59645A7884F87BA5BF6AB93E688901B /* InnerKRProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = B777E99A473DB536ECD177C1824B2A32 /* InnerKRProgressHUD.swift */; };
+		AB43B618099D0E0BE5730DE4166CD403 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFDD69561674FF805501D9E0B1FCDC7 /* Reachability.swift */; };
+		C16653C5C55DAFC491E8D8ADA6C1CDB5 /* Pods-BostaTask-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F72336D85553FD327D6D43780444D91C /* Pods-BostaTask-dummy.m */; };
+		C21ED0B4C9C617089241298BB41D2BF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2B117F7A3CB312FF54BFF9D46B0180 /* Foundation.framework */; };
+		CA7E10D26795AD95FE839ABB47C24F25 /* LPSnackbar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B0CEDAD947DDFB57C417B02D8F8C264C /* LPSnackbar-dummy.m */; };
+		D72F11D437D296BCFFD918A399D50D19 /* LPSnackbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F32384F280F594ED24E2EF36B786123B /* LPSnackbarView.swift */; };
+		DCD99FE7978A32543A4BBF398E907425 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2B117F7A3CB312FF54BFF9D46B0180 /* Foundation.framework */; };
+		DFB95248137010B96366E1E49B8221CE /* KRActivityIndicatorViewStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B50EDB07AD8E58FF36D4A48D2310D0 /* KRActivityIndicatorViewStyle.swift */; };
+		E5734FE2E4663F4C9E7ED8CECC38D2F2 /* KRProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9135B4F985F1F9C17AE9C1B4DC68E22D /* KRProgressHUD-dummy.m */; };
+		EA9307BFC6EC7DB48CC7944D87102096 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5CCC4834AB6F6AD3DC73CDF00066409 /* Extensions.swift */; };
+		EE468DF777E82A8AB41ED7D7289B9B9C /* KRProgressHUDViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6ADFB8F6B65628BDDFB70C60603CAFC /* KRProgressHUDViewController.swift */; };
+		F5C7CECF1E3E73AFEC9547F5AAA24730 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021D7B1636541052166EF97A75DE3FB3 /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C4553B0BE64142DF0A935CFC9CF033E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0B00B2C167CD783351BD1D00BD5AD1F8;
+			remoteInfo = ReachabilitySwift;
+		};
+		7999297286256527CFE226A0E5A63BC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC8733253C277B185DA5B5BD2AD2D756;
+			remoteInfo = LPSnackbar;
+		};
+		BBCE98EBC0DD38FE4B0B6F61B6F1EC83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7A1E5A05AF87570E2873C5F725E2CB;
+			remoteInfo = KRActivityIndicatorView;
+		};
+		BFB44642ADDC10A8239E8AC7C8761C6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F7A1E5A05AF87570E2873C5F725E2CB;
+			remoteInfo = KRActivityIndicatorView;
+		};
+		E74D7CB104C4D254F382968489F9CC24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA4681533D6AA601F9C9E2A116B7472C;
+			remoteInfo = KRProgressHUD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00F7C643A56999F16B3C83B52CF8F2EC /* KRProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRProgressHUD.debug.xcconfig; sourceTree = "<group>"; };
+		021D7B1636541052166EF97A75DE3FB3 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = KRProgressHUD/Classes/Extensions.swift; sourceTree = "<group>"; };
+		0AD35DA6BB74B50CEEAF7F14AFC768F6 /* Pods-BostaTask */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BostaTask"; path = Pods_BostaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C2C558E300E2ECBB1B8D4B15BB5DCD4 /* LPSnackbar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPSnackbar.debug.xcconfig; sourceTree = "<group>"; };
+		0E5DE857965B365BF1165541F5CFA4F3 /* Pods-BostaTask-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BostaTask-acknowledgements.plist"; sourceTree = "<group>"; };
+		12BF144CAB78547BA21833333CCB1315 /* ReachabilitySwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ReachabilitySwift-dummy.m"; sourceTree = "<group>"; };
+		159CF756FE7D1E19F250415EB0FB72F1 /* LPSnackbar-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LPSnackbar-Info.plist"; sourceTree = "<group>"; };
+		197E3DF75F742F56940411BD8625D95A /* ReachabilitySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.debug.xcconfig; sourceTree = "<group>"; };
+		1A233E22D4021E6E887B4CB30C92B0F2 /* Pods-BostaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BostaTask.release.xcconfig"; sourceTree = "<group>"; };
+		1C33CB84138510317C9CFF8E19C47C23 /* KRProgressHUD */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KRProgressHUD; path = KRProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21B03CA622E690725A6626C088E1D09F /* ReachabilitySwift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ReachabilitySwift; path = Reachability.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2544C3A1631BACBD2FC964E079CB6787 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		2C5D4BBCCECB37783BABB2C4A22F7C73 /* Pods-BostaTask-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BostaTask-Info.plist"; sourceTree = "<group>"; };
+		413918CC86A9C568393D6CDB8F5E247A /* ReachabilitySwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-prefix.pch"; sourceTree = "<group>"; };
+		4830DD5672B5DC378D62008DEA18E67F /* Pods-BostaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BostaTask.debug.xcconfig"; sourceTree = "<group>"; };
+		4F8CF875510C75A88216B06B844BF839 /* ReachabilitySwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ReachabilitySwift-umbrella.h"; sourceTree = "<group>"; };
+		64811497C4E4E046358C3D5105EDCB5A /* KRProgressHUD-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRProgressHUD-umbrella.h"; sourceTree = "<group>"; };
+		66C6C54CB70C979869BBDC2FB229B8DE /* Pods-BostaTask-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BostaTask-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6AC981B56BA2161F904879A2FB03664B /* ReachabilitySwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = ReachabilitySwift.modulemap; sourceTree = "<group>"; };
+		71A47CC6BD1553B7307F98D2DEBFFF61 /* ReachabilitySwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ReachabilitySwift-Info.plist"; sourceTree = "<group>"; };
+		7637A1FC53D25FB5110AFAD458649463 /* ReachabilitySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ReachabilitySwift.release.xcconfig; sourceTree = "<group>"; };
+		790153FA9F1D642474F34C04AE0E15D6 /* KRActivityIndicatorView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KRActivityIndicatorView.modulemap; sourceTree = "<group>"; };
+		7B275A7402B73FCFDC798EE8F71E0B47 /* Pods-BostaTask-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BostaTask-frameworks.sh"; sourceTree = "<group>"; };
+		8038A8D5CC1925BD17FE3EF81C62A754 /* LPSnackbar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPSnackbar-prefix.pch"; sourceTree = "<group>"; };
+		851ECF1D26D4E971C6C6A13772CA706A /* KRActivityIndicatorView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRActivityIndicatorView.release.xcconfig; sourceTree = "<group>"; };
+		8600D47A402BFF4D6115152C4674E704 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		8C13072BFEA7B557450811D322E66855 /* Pods-BostaTask.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BostaTask.modulemap"; sourceTree = "<group>"; };
+		9122735F84FAF118FD992804B6D49F8D /* KRProgressHUD-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KRProgressHUD-Info.plist"; sourceTree = "<group>"; };
+		9135B4F985F1F9C17AE9C1B4DC68E22D /* KRProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KRProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		9258ECC23A4C8B0274C7A6DF69DDFE95 /* KRActivityIndicatorView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KRActivityIndicatorView; path = KRActivityIndicatorView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9477A8342447603B5D09908363F7C1AC /* KRProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRProgressHUD.swift; path = KRProgressHUD/Classes/KRProgressHUD.swift; sourceTree = "<group>"; };
+		96004D2B3F9E91998A531E48DEF6769D /* KRProgressHUD.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KRProgressHUD.modulemap; sourceTree = "<group>"; };
+		97E742614E592AFA324058A8264FBB8C /* KRProgressHUDIconType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRProgressHUDIconType.swift; path = KRProgressHUD/Classes/KRProgressHUDIconType.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A4C33C5C780AF616EEA6E4AA185ACB8F /* LPSnackbar */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LPSnackbar; path = LPSnackbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB1F16811D8EAA21FD315842762DE5B0 /* KRActivityIndicatorView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRActivityIndicatorView.debug.xcconfig; sourceTree = "<group>"; };
+		AD1A2AA4D3B8A3CD86F785DC9DBD79D6 /* KRProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		B06E4AF59C7F3A48D76E612736D700DE /* KRActivityIndicatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRActivityIndicatorView.swift; path = KRActivityIndicatorView/Classes/KRActivityIndicatorView.swift; sourceTree = "<group>"; };
+		B0CEDAD947DDFB57C417B02D8F8C264C /* LPSnackbar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LPSnackbar-dummy.m"; sourceTree = "<group>"; };
+		B127138F19D65B6BC11E74B4B23B7140 /* LPSnackbar.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LPSnackbar.swift; path = src/LPSnackbar/LPSnackbar.swift; sourceTree = "<group>"; };
+		B199BAD9FF7F1DD26C82697797160612 /* Pods-BostaTask-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BostaTask-umbrella.h"; sourceTree = "<group>"; };
+		B777E99A473DB536ECD177C1824B2A32 /* InnerKRProgressHUD.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InnerKRProgressHUD.swift; path = KRProgressHUD/Classes/InnerKRProgressHUD.swift; sourceTree = "<group>"; };
+		B8C48100E6CE52186B762F53845C2405 /* KRActivityIndicatorView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRActivityIndicatorView-umbrella.h"; sourceTree = "<group>"; };
+		B97E71D1DA6FD8011554AF58CEAD59E0 /* KRActivityIndicatorView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KRActivityIndicatorView-dummy.m"; sourceTree = "<group>"; };
+		C4BDBC08BEE1936EE29B4994AF3FEF97 /* LPSnackbar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LPSnackbar.release.xcconfig; sourceTree = "<group>"; };
+		C51DF87F4E92BF3DABBF9CC0FAE70DE7 /* KRActivityIndicatorView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KRActivityIndicatorView-Info.plist"; sourceTree = "<group>"; };
+		C5A67620DE5B4D5BF1C54EB28C58EA23 /* LPSnackbar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LPSnackbar-umbrella.h"; sourceTree = "<group>"; };
+		C932EB3F76BC9F51A8F1D67C3A313380 /* LPSnackbar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LPSnackbar.modulemap; sourceTree = "<group>"; };
+		C9D173BAB4113245952AC8531E6B1F0A /* LPSnackbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LPSnackbar.h; path = src/LPSnackbar/LPSnackbar.h; sourceTree = "<group>"; };
+		CDFDD69561674FF805501D9E0B1FCDC7 /* Reachability.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reachability.swift; path = Sources/Reachability.swift; sourceTree = "<group>"; };
+		D8A5E7ECB56BCEB578999A7FB003597A /* KRProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KRProgressHUD.release.xcconfig; sourceTree = "<group>"; };
+		E5CCC4834AB6F6AD3DC73CDF00066409 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = KRActivityIndicatorView/Classes/Extensions.swift; sourceTree = "<group>"; };
+		EE2B117F7A3CB312FF54BFF9D46B0180 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		F32384F280F594ED24E2EF36B786123B /* LPSnackbarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LPSnackbarView.swift; path = src/LPSnackbar/LPSnackbarView.swift; sourceTree = "<group>"; };
+		F6ADFB8F6B65628BDDFB70C60603CAFC /* KRProgressHUDViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRProgressHUDViewController.swift; path = KRProgressHUD/Classes/KRProgressHUDViewController.swift; sourceTree = "<group>"; };
+		F72336D85553FD327D6D43780444D91C /* Pods-BostaTask-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BostaTask-dummy.m"; sourceTree = "<group>"; };
+		F7B50EDB07AD8E58FF36D4A48D2310D0 /* KRActivityIndicatorViewStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KRActivityIndicatorViewStyle.swift; path = KRActivityIndicatorView/Classes/KRActivityIndicatorViewStyle.swift; sourceTree = "<group>"; };
+		F94034C5F79112069989D0BA69C1C671 /* KRActivityIndicatorView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KRActivityIndicatorView-prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1A60D586D2F33EBF6250C21B5C55719F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2468408EA9C033EE2EEDF299032A382B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C23E2775A268AF03AB4FB35BFC953FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5433D9B1A7004CEBF4CA2F1FEEBCAB38 /* CoreTelephony.framework in Frameworks */,
+				210DD290122BB0C7A0E83DC5148D724E /* Foundation.framework in Frameworks */,
+				93DE5DC6D98B5DD09860532E35AE7C90 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		737E98D38B864F7F8D873F171D288542 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCD99FE7978A32543A4BBF398E907425 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AB39F144A72F040D2C21D2F2A3CA138 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				227F575C7A4BA4B60D7CED084C9B4A3C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD586B9E4D7076544C646EC8482E6164 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C21ED0B4C9C617089241298BB41D2BF0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25F621761C10451F73C1586FED94CCAC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0780653EB63CB7DA646A5E58EE412479 /* ReachabilitySwift */ = {
+			isa = PBXGroup;
+			children = (
+				CDFDD69561674FF805501D9E0B1FCDC7 /* Reachability.swift */,
+				A84B42E427568ABFA55E3FAA843A3639 /* Support Files */,
+			);
+			name = ReachabilitySwift;
+			path = ReachabilitySwift;
+			sourceTree = "<group>";
+		};
+		1FE836A29B3DB9A624F1200851E1AE08 /* Pods-BostaTask */ = {
+			isa = PBXGroup;
+			children = (
+				8C13072BFEA7B557450811D322E66855 /* Pods-BostaTask.modulemap */,
+				66C6C54CB70C979869BBDC2FB229B8DE /* Pods-BostaTask-acknowledgements.markdown */,
+				0E5DE857965B365BF1165541F5CFA4F3 /* Pods-BostaTask-acknowledgements.plist */,
+				F72336D85553FD327D6D43780444D91C /* Pods-BostaTask-dummy.m */,
+				7B275A7402B73FCFDC798EE8F71E0B47 /* Pods-BostaTask-frameworks.sh */,
+				2C5D4BBCCECB37783BABB2C4A22F7C73 /* Pods-BostaTask-Info.plist */,
+				B199BAD9FF7F1DD26C82697797160612 /* Pods-BostaTask-umbrella.h */,
+				4830DD5672B5DC378D62008DEA18E67F /* Pods-BostaTask.debug.xcconfig */,
+				1A233E22D4021E6E887B4CB30C92B0F2 /* Pods-BostaTask.release.xcconfig */,
+			);
+			name = "Pods-BostaTask";
+			path = "Target Support Files/Pods-BostaTask";
+			sourceTree = "<group>";
+		};
+		21F3232BF8A2F5AD9659A555BD26385C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A4ABC957442784D1D729C1ABECA8088 /* KRActivityIndicatorView */,
+				2F239C60E28AAF1E583869B30EC13FD6 /* KRProgressHUD */,
+				AE1BCA52AA4DDF470A2FC88C8A9E81E9 /* LPSnackbar */,
+				0780653EB63CB7DA646A5E58EE412479 /* ReachabilitySwift */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		23CF64AC3945C5C69FD6A0B5870484D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9258ECC23A4C8B0274C7A6DF69DDFE95 /* KRActivityIndicatorView */,
+				1C33CB84138510317C9CFF8E19C47C23 /* KRProgressHUD */,
+				A4C33C5C780AF616EEA6E4AA185ACB8F /* LPSnackbar */,
+				0AD35DA6BB74B50CEEAF7F14AFC768F6 /* Pods-BostaTask */,
+				21B03CA622E690725A6626C088E1D09F /* ReachabilitySwift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25F621761C10451F73C1586FED94CCAC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2544C3A1631BACBD2FC964E079CB6787 /* CoreTelephony.framework */,
+				EE2B117F7A3CB312FF54BFF9D46B0180 /* Foundation.framework */,
+				8600D47A402BFF4D6115152C4674E704 /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2F239C60E28AAF1E583869B30EC13FD6 /* KRProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				021D7B1636541052166EF97A75DE3FB3 /* Extensions.swift */,
+				B777E99A473DB536ECD177C1824B2A32 /* InnerKRProgressHUD.swift */,
+				9477A8342447603B5D09908363F7C1AC /* KRProgressHUD.swift */,
+				97E742614E592AFA324058A8264FBB8C /* KRProgressHUDIconType.swift */,
+				F6ADFB8F6B65628BDDFB70C60603CAFC /* KRProgressHUDViewController.swift */,
+				AF0F008BF688586A1431C678C50316A0 /* Support Files */,
+			);
+			name = KRProgressHUD;
+			path = KRProgressHUD;
+			sourceTree = "<group>";
+		};
+		55220F0BD659518BC1673C21AA29EAE3 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				790153FA9F1D642474F34C04AE0E15D6 /* KRActivityIndicatorView.modulemap */,
+				B97E71D1DA6FD8011554AF58CEAD59E0 /* KRActivityIndicatorView-dummy.m */,
+				C51DF87F4E92BF3DABBF9CC0FAE70DE7 /* KRActivityIndicatorView-Info.plist */,
+				F94034C5F79112069989D0BA69C1C671 /* KRActivityIndicatorView-prefix.pch */,
+				B8C48100E6CE52186B762F53845C2405 /* KRActivityIndicatorView-umbrella.h */,
+				AB1F16811D8EAA21FD315842762DE5B0 /* KRActivityIndicatorView.debug.xcconfig */,
+				851ECF1D26D4E971C6C6A13772CA706A /* KRActivityIndicatorView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KRActivityIndicatorView";
+			sourceTree = "<group>";
+		};
+		7A4ABC957442784D1D729C1ABECA8088 /* KRActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				E5CCC4834AB6F6AD3DC73CDF00066409 /* Extensions.swift */,
+				B06E4AF59C7F3A48D76E612736D700DE /* KRActivityIndicatorView.swift */,
+				F7B50EDB07AD8E58FF36D4A48D2310D0 /* KRActivityIndicatorViewStyle.swift */,
+				55220F0BD659518BC1673C21AA29EAE3 /* Support Files */,
+			);
+			name = KRActivityIndicatorView;
+			path = KRActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		A84B42E427568ABFA55E3FAA843A3639 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6AC981B56BA2161F904879A2FB03664B /* ReachabilitySwift.modulemap */,
+				12BF144CAB78547BA21833333CCB1315 /* ReachabilitySwift-dummy.m */,
+				71A47CC6BD1553B7307F98D2DEBFFF61 /* ReachabilitySwift-Info.plist */,
+				413918CC86A9C568393D6CDB8F5E247A /* ReachabilitySwift-prefix.pch */,
+				4F8CF875510C75A88216B06B844BF839 /* ReachabilitySwift-umbrella.h */,
+				197E3DF75F742F56940411BD8625D95A /* ReachabilitySwift.debug.xcconfig */,
+				7637A1FC53D25FB5110AFAD458649463 /* ReachabilitySwift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/ReachabilitySwift";
+			sourceTree = "<group>";
+		};
+		AE1BCA52AA4DDF470A2FC88C8A9E81E9 /* LPSnackbar */ = {
+			isa = PBXGroup;
+			children = (
+				C9D173BAB4113245952AC8531E6B1F0A /* LPSnackbar.h */,
+				B127138F19D65B6BC11E74B4B23B7140 /* LPSnackbar.swift */,
+				F32384F280F594ED24E2EF36B786123B /* LPSnackbarView.swift */,
+				F375F84F91E4A322155E04D7AEF1C622 /* Support Files */,
+			);
+			name = LPSnackbar;
+			path = LPSnackbar;
+			sourceTree = "<group>";
+		};
+		AF0F008BF688586A1431C678C50316A0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				96004D2B3F9E91998A531E48DEF6769D /* KRProgressHUD.modulemap */,
+				9135B4F985F1F9C17AE9C1B4DC68E22D /* KRProgressHUD-dummy.m */,
+				9122735F84FAF118FD992804B6D49F8D /* KRProgressHUD-Info.plist */,
+				AD1A2AA4D3B8A3CD86F785DC9DBD79D6 /* KRProgressHUD-prefix.pch */,
+				64811497C4E4E046358C3D5105EDCB5A /* KRProgressHUD-umbrella.h */,
+				00F7C643A56999F16B3C83B52CF8F2EC /* KRProgressHUD.debug.xcconfig */,
+				D8A5E7ECB56BCEB578999A7FB003597A /* KRProgressHUD.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KRProgressHUD";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				21F3232BF8A2F5AD9659A555BD26385C /* Pods */,
+				23CF64AC3945C5C69FD6A0B5870484D6 /* Products */,
+				F7CCBB9AC3A45E62AFABA70AD47076D6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		F375F84F91E4A322155E04D7AEF1C622 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C932EB3F76BC9F51A8F1D67C3A313380 /* LPSnackbar.modulemap */,
+				B0CEDAD947DDFB57C417B02D8F8C264C /* LPSnackbar-dummy.m */,
+				159CF756FE7D1E19F250415EB0FB72F1 /* LPSnackbar-Info.plist */,
+				8038A8D5CC1925BD17FE3EF81C62A754 /* LPSnackbar-prefix.pch */,
+				C5A67620DE5B4D5BF1C54EB28C58EA23 /* LPSnackbar-umbrella.h */,
+				0C2C558E300E2ECBB1B8D4B15BB5DCD4 /* LPSnackbar.debug.xcconfig */,
+				C4BDBC08BEE1936EE29B4994AF3FEF97 /* LPSnackbar.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/LPSnackbar";
+			sourceTree = "<group>";
+		};
+		F7CCBB9AC3A45E62AFABA70AD47076D6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FE836A29B3DB9A624F1200851E1AE08 /* Pods-BostaTask */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		056F6F4D1A1FC8DCB6DD0A95E4632CB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28FE5CF2996BE7E3118F17C97A992D6B /* Pods-BostaTask-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E829EA627107E8158CAFCF16958835A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32DAFD5267320A0E445C44D5B0A8A3E6 /* KRActivityIndicatorView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A07235E1E88D103EFDEB6510A0BCE7A8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17DE87344CAD319DE6AA0F7BE1BA10C7 /* ReachabilitySwift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB22DB93A9DCF37D720EEBA863F2A1BA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B527DB69280CF80AABF664A88202E84 /* KRProgressHUD-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D0E49F0EDC6CBD75584E35950F473307 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9416B584E4A30B8AA843D0EA19AA95FF /* LPSnackbar.h in Headers */,
+				7EA3511AA0071BCF980A2FA04758D6A9 /* LPSnackbar-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14DE1166A8B9C02D036523FB495E1984 /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */;
+			buildPhases = (
+				A07235E1E88D103EFDEB6510A0BCE7A8 /* Headers */,
+				000885395D0D686A060DD76E35D874C2 /* Sources */,
+				1C23E2775A268AF03AB4FB35BFC953FA /* Frameworks */,
+				332B7A37F1A79B4B578E4145341A0E1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReachabilitySwift;
+			productName = Reachability;
+			productReference = 21B03CA622E690725A6626C088E1D09F /* ReachabilitySwift */;
+			productType = "com.apple.product-type.framework";
+		};
+		4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED1F62E459590C11B6D6F75CE6FC6295 /* Build configuration list for PBXNativeTarget "KRActivityIndicatorView" */;
+			buildPhases = (
+				0E829EA627107E8158CAFCF16958835A /* Headers */,
+				042D193EACCED2D20ED31518986F6AC8 /* Sources */,
+				8AB39F144A72F040D2C21D2F2A3CA138 /* Frameworks */,
+				90842901C6BA0BA008A60BD1AA069A01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KRActivityIndicatorView;
+			productName = KRActivityIndicatorView;
+			productReference = 9258ECC23A4C8B0274C7A6DF69DDFE95 /* KRActivityIndicatorView */;
+			productType = "com.apple.product-type.framework";
+		};
+		BA4681533D6AA601F9C9E2A116B7472C /* KRProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE46D50F7142469FB4F76946987DE8F0 /* Build configuration list for PBXNativeTarget "KRProgressHUD" */;
+			buildPhases = (
+				BB22DB93A9DCF37D720EEBA863F2A1BA /* Headers */,
+				E9542941DD8395F63154CCF9F551D523 /* Sources */,
+				BD586B9E4D7076544C646EC8482E6164 /* Frameworks */,
+				58ADCC2540CD6448AF052A92ABF41638 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CAF7A95D4998D343707700224703289 /* PBXTargetDependency */,
+			);
+			name = KRProgressHUD;
+			productName = KRProgressHUD;
+			productReference = 1C33CB84138510317C9CFF8E19C47C23 /* KRProgressHUD */;
+			productType = "com.apple.product-type.framework";
+		};
+		DC8733253C277B185DA5B5BD2AD2D756 /* LPSnackbar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C385044ABDC3085C2A4C567ED71008E /* Build configuration list for PBXNativeTarget "LPSnackbar" */;
+			buildPhases = (
+				D0E49F0EDC6CBD75584E35950F473307 /* Headers */,
+				9B25D1160A6E1C26B7C4F9396B800EA0 /* Sources */,
+				737E98D38B864F7F8D873F171D288542 /* Frameworks */,
+				AED7991C08331EE014B1C228373B6092 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LPSnackbar;
+			productName = LPSnackbar;
+			productReference = A4C33C5C780AF616EEA6E4AA185ACB8F /* LPSnackbar */;
+			productType = "com.apple.product-type.framework";
+		};
+		DF8F388E5D9337B5F0B3FB8CC2FDAF88 /* Pods-BostaTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 404CA43651FCA8B65ADF980BE33A10D2 /* Build configuration list for PBXNativeTarget "Pods-BostaTask" */;
+			buildPhases = (
+				056F6F4D1A1FC8DCB6DD0A95E4632CB2 /* Headers */,
+				50E09879321015336AB4A79DEF5EF2C9 /* Sources */,
+				1A60D586D2F33EBF6250C21B5C55719F /* Frameworks */,
+				56D5D6932822EAB265E5F137FF3A9CA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CFB0DEB5F4BA9E6EF5C189593B4E69D6 /* PBXTargetDependency */,
+				459443A57660C82953D5DADE041D1024 /* PBXTargetDependency */,
+				6A2C6AA49C25404AAE5A33512FB33E0C /* PBXTargetDependency */,
+				61FD75692E806B1A4D3DE97370F1F4A7 /* PBXTargetDependency */,
+			);
+			name = "Pods-BostaTask";
+			productName = Pods_BostaTask;
+			productReference = 0AD35DA6BB74B50CEEAF7F14AFC768F6 /* Pods-BostaTask */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 23CF64AC3945C5C69FD6A0B5870484D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */,
+				BA4681533D6AA601F9C9E2A116B7472C /* KRProgressHUD */,
+				DC8733253C277B185DA5B5BD2AD2D756 /* LPSnackbar */,
+				DF8F388E5D9337B5F0B3FB8CC2FDAF88 /* Pods-BostaTask */,
+				0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		332B7A37F1A79B4B578E4145341A0E1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		56D5D6932822EAB265E5F137FF3A9CA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58ADCC2540CD6448AF052A92ABF41638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90842901C6BA0BA008A60BD1AA069A01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AED7991C08331EE014B1C228373B6092 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000885395D0D686A060DD76E35D874C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB43B618099D0E0BE5730DE4166CD403 /* Reachability.swift in Sources */,
+				960DCEE9167C9C9E11FAA0EDAF872B2F /* ReachabilitySwift-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		042D193EACCED2D20ED31518986F6AC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA9307BFC6EC7DB48CC7944D87102096 /* Extensions.swift in Sources */,
+				0231BF88DE78D1AF701640162F641EF1 /* KRActivityIndicatorView.swift in Sources */,
+				664296435583DFE0E7F51D03A05D5E46 /* KRActivityIndicatorView-dummy.m in Sources */,
+				DFB95248137010B96366E1E49B8221CE /* KRActivityIndicatorViewStyle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50E09879321015336AB4A79DEF5EF2C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C16653C5C55DAFC491E8D8ADA6C1CDB5 /* Pods-BostaTask-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B25D1160A6E1C26B7C4F9396B800EA0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F7778471962690BAD73A12905D615F7 /* LPSnackbar.swift in Sources */,
+				CA7E10D26795AD95FE839ABB47C24F25 /* LPSnackbar-dummy.m in Sources */,
+				D72F11D437D296BCFFD918A399D50D19 /* LPSnackbarView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9542941DD8395F63154CCF9F551D523 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5C7CECF1E3E73AFEC9547F5AAA24730 /* Extensions.swift in Sources */,
+				A59645A7884F87BA5BF6AB93E688901B /* InnerKRProgressHUD.swift in Sources */,
+				5EDD32C82B9EE160E6615CEAEFCA1A15 /* KRProgressHUD.swift in Sources */,
+				E5734FE2E4663F4C9E7ED8CECC38D2F2 /* KRProgressHUD-dummy.m in Sources */,
+				5BF5CE60210BA63B24F47DA85DB6D541 /* KRProgressHUDIconType.swift in Sources */,
+				EE468DF777E82A8AB41ED7D7289B9B9C /* KRProgressHUDViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		459443A57660C82953D5DADE041D1024 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRProgressHUD;
+			target = BA4681533D6AA601F9C9E2A116B7472C /* KRProgressHUD */;
+			targetProxy = E74D7CB104C4D254F382968489F9CC24 /* PBXContainerItemProxy */;
+		};
+		5CAF7A95D4998D343707700224703289 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRActivityIndicatorView;
+			target = 4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */;
+			targetProxy = BFB44642ADDC10A8239E8AC7C8761C6D /* PBXContainerItemProxy */;
+		};
+		61FD75692E806B1A4D3DE97370F1F4A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ReachabilitySwift;
+			target = 0B00B2C167CD783351BD1D00BD5AD1F8 /* ReachabilitySwift */;
+			targetProxy = 3C4553B0BE64142DF0A935CFC9CF033E /* PBXContainerItemProxy */;
+		};
+		6A2C6AA49C25404AAE5A33512FB33E0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LPSnackbar;
+			target = DC8733253C277B185DA5B5BD2AD2D756 /* LPSnackbar */;
+			targetProxy = 7999297286256527CFE226A0E5A63BC9 /* PBXContainerItemProxy */;
+		};
+		CFB0DEB5F4BA9E6EF5C189593B4E69D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KRActivityIndicatorView;
+			target = 4F7A1E5A05AF87570E2873C5F725E2CB /* KRActivityIndicatorView */;
+			targetProxy = BBCE98EBC0DD38FE4B0B6F61B6F1EC83 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05FE231D25F95898986897980040D6F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4830DD5672B5DC378D62008DEA18E67F /* Pods-BostaTask.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BostaTask/Pods-BostaTask-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BostaTask/Pods-BostaTask.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		08D3CFCD697E35B31C18946FE494E1B1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB1F16811D8EAA21FD315842762DE5B0 /* KRActivityIndicatorView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = KRActivityIndicatorView;
+				PRODUCT_NAME = KRActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		14394C310CB55A4531D35D3A9B3D7DC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00F7C643A56999F16B3C83B52CF8F2EC /* KRProgressHUD.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KRProgressHUD/KRProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KRProgressHUD/KRProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KRProgressHUD/KRProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = KRProgressHUD;
+				PRODUCT_NAME = KRProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B9E26EAE2CD392AD762421F663075A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		2F55D1E7E4C9E701F0522643A3A6296D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 851ECF1D26D4E971C6C6A13772CA706A /* KRActivityIndicatorView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KRActivityIndicatorView/KRActivityIndicatorView.modulemap";
+				PRODUCT_MODULE_NAME = KRActivityIndicatorView;
+				PRODUCT_NAME = KRActivityIndicatorView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		45E8171F3B13294C1434863A6CD6D4D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 197E3DF75F742F56940411BD8625D95A /* ReachabilitySwift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		596739A7B2B05C885EBCC4008D91750A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8A5E7ECB56BCEB578999A7FB003597A /* KRProgressHUD.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KRProgressHUD/KRProgressHUD-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KRProgressHUD/KRProgressHUD-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/KRProgressHUD/KRProgressHUD.modulemap";
+				PRODUCT_MODULE_NAME = KRProgressHUD;
+				PRODUCT_NAME = KRProgressHUD;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		76D7A7E9CC9EA866DF3EFB64AC32B765 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4BDBC08BEE1936EE29B4994AF3FEF97 /* LPSnackbar.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LPSnackbar/LPSnackbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LPSnackbar/LPSnackbar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LPSnackbar/LPSnackbar.modulemap";
+				PRODUCT_MODULE_NAME = LPSnackbar;
+				PRODUCT_NAME = LPSnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AF49FD0340345E21EE185D6C9E7F4049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A233E22D4021E6E887B4CB30C92B0F2 /* Pods-BostaTask.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-BostaTask/Pods-BostaTask-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-BostaTask/Pods-BostaTask.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EACDDDC9C0F413718312E0A600371E1B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7637A1FC53D25FB5110AFAD458649463 /* ReachabilitySwift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/ReachabilitySwift/ReachabilitySwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/ReachabilitySwift/ReachabilitySwift.modulemap";
+				PRODUCT_MODULE_NAME = Reachability;
+				PRODUCT_NAME = Reachability;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ECBB385C3A8AC407D6C335EB0E339FDE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C2C558E300E2ECBB1B8D4B15BB5DCD4 /* LPSnackbar.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LPSnackbar/LPSnackbar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LPSnackbar/LPSnackbar-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/LPSnackbar/LPSnackbar.modulemap";
+				PRODUCT_MODULE_NAME = LPSnackbar;
+				PRODUCT_NAME = LPSnackbar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		14DE1166A8B9C02D036523FB495E1984 /* Build configuration list for PBXNativeTarget "ReachabilitySwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45E8171F3B13294C1434863A6CD6D4D2 /* Debug */,
+				EACDDDC9C0F413718312E0A600371E1B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		404CA43651FCA8B65ADF980BE33A10D2 /* Build configuration list for PBXNativeTarget "Pods-BostaTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05FE231D25F95898986897980040D6F5 /* Debug */,
+				AF49FD0340345E21EE185D6C9E7F4049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B9E26EAE2CD392AD762421F663075A1 /* Debug */,
+				63FAF33E1C55B71A5F5A8B3CC8749F99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8C385044ABDC3085C2A4C567ED71008E /* Build configuration list for PBXNativeTarget "LPSnackbar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECBB385C3A8AC407D6C335EB0E339FDE /* Debug */,
+				76D7A7E9CC9EA866DF3EFB64AC32B765 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE46D50F7142469FB4F76946987DE8F0 /* Build configuration list for PBXNativeTarget "KRProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14394C310CB55A4531D35D3A9B3D7DC3 /* Debug */,
+				596739A7B2B05C885EBCC4008D91750A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED1F62E459590C11B6D6F75CE6FC6295 /* Build configuration list for PBXNativeTarget "KRActivityIndicatorView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08D3CFCD697E35B31C18946FE494E1B1 /* Debug */,
+				2F55D1E7E4C9E701F0522643A3A6296D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
