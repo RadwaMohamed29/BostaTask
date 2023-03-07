@@ -31,6 +31,7 @@
 		16BB224E29B72C9200474711 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB224D29B72C9200474711 /* User.swift */; };
 		16BB225029B72CA500474711 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB224F29B72CA500474711 /* Album.swift */; };
 		16BB225229B72CC200474711 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB225129B72CC200474711 /* Photo.swift */; };
+		16BB225429B73CF000474711 /* UserProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB225329B73CF000474711 /* UserProfileViewModel.swift */; };
 		A992BFD4CD89E64E211EA293 /* Pods_BostaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D3D55E7181C902523EBEB6 /* Pods_BostaTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +57,7 @@
 		16BB224D29B72C9200474711 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		16BB224F29B72CA500474711 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		16BB225129B72CC200474711 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		16BB225329B73CF000474711 /* UserProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewModel.swift; sourceTree = "<group>"; };
 		17D3D55E7181C902523EBEB6 /* Pods_BostaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BostaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FF77CEA6EAF1497D1E11A4 /* Pods-BostaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BostaTask.release.xcconfig"; path = "Target Support Files/Pods-BostaTask/Pods-BostaTask.release.xcconfig"; sourceTree = "<group>"; };
 		B27C683AE9E5306728326F9B /* Pods-BostaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BostaTask.debug.xcconfig"; path = "Target Support Files/Pods-BostaTask/Pods-BostaTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 		163AE34529B705A3007CAA6B /* View Model */ = {
 			isa = PBXGroup;
 			children = (
+				16BB225329B73CF000474711 /* UserProfileViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -358,6 +361,7 @@
 			files = (
 				16BB225229B72CC200474711 /* Photo.swift in Sources */,
 				16BB225029B72CA500474711 /* Album.swift in Sources */,
+				16BB225429B73CF000474711 /* UserProfileViewModel.swift in Sources */,
 				16BB224729B7289600474711 /* NetworkManager.swift in Sources */,
 				16BB223529B7110000474711 /* UserProfileViewController.swift in Sources */,
 				163AE32D29B704EB007CAA6B /* AppDelegate.swift in Sources */,

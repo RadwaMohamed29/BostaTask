@@ -26,7 +26,7 @@ extension APIService: TargetType{
     var path: String {
         switch self {
         case .getUser:
-            return "/1"
+            return "/3"
         case .getUserAlbums(let userID):
             return "/\(userID)/albums"
         case .getAllPhotos(let albumID):
