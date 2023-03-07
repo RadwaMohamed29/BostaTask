@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		163AE32D29B704EB007CAA6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163AE32C29B704EB007CAA6B /* AppDelegate.swift */; };
 		163AE32F29B704EB007CAA6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163AE32E29B704EB007CAA6B /* SceneDelegate.swift */; };
-		163AE33129B704EB007CAA6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163AE33029B704EB007CAA6B /* ViewController.swift */; };
 		163AE33429B704EB007CAA6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163AE33229B704EB007CAA6B /* Main.storyboard */; };
 		163AE33729B704EB007CAA6B /* BostaTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 163AE33529B704EB007CAA6B /* BostaTask.xcdatamodeld */; };
 		163AE33929B704ED007CAA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163AE33829B704ED007CAA6B /* Assets.xcassets */; };
@@ -19,6 +18,9 @@
 		16BB222F29B70E7400474711 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 16BB222E29B70E7400474711 /* Moya */; };
 		16BB223129B70E7400474711 /* ReactiveMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 16BB223029B70E7400474711 /* ReactiveMoya */; };
 		16BB223329B70E7400474711 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 16BB223229B70E7400474711 /* RxMoya */; };
+		16BB223529B7110000474711 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB223429B7110000474711 /* UserProfileViewController.swift */; };
+		16BB223929B717C600474711 /* UserAlbumsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB223729B717C600474711 /* UserAlbumsTableViewCell.swift */; };
+		16BB223A29B717C600474711 /* UserAlbumsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BB223829B717C600474711 /* UserAlbumsTableViewCell.xib */; };
 		A992BFD4CD89E64E211EA293 /* Pods_BostaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D3D55E7181C902523EBEB6 /* Pods_BostaTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,12 +28,14 @@
 		163AE32929B704EB007CAA6B /* BostaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BostaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		163AE32C29B704EB007CAA6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		163AE32E29B704EB007CAA6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		163AE33029B704EB007CAA6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		163AE33329B704EB007CAA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		163AE33629B704EB007CAA6B /* BostaTask.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BostaTask.xcdatamodel; sourceTree = "<group>"; };
 		163AE33829B704ED007CAA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		163AE33B29B704ED007CAA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		163AE33D29B704ED007CAA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16BB223429B7110000474711 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
+		16BB223729B717C600474711 /* UserAlbumsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAlbumsTableViewCell.swift; sourceTree = "<group>"; };
+		16BB223829B717C600474711 /* UserAlbumsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAlbumsTableViewCell.xib; sourceTree = "<group>"; };
 		17D3D55E7181C902523EBEB6 /* Pods_BostaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BostaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FF77CEA6EAF1497D1E11A4 /* Pods-BostaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BostaTask.release.xcconfig"; path = "Target Support Files/Pods-BostaTask/Pods-BostaTask.release.xcconfig"; sourceTree = "<group>"; };
 		B27C683AE9E5306728326F9B /* Pods-BostaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BostaTask.debug.xcconfig"; path = "Target Support Files/Pods-BostaTask/Pods-BostaTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -81,7 +85,6 @@
 				163AE34529B705A3007CAA6B /* View Model */,
 				163AE34429B7059E007CAA6B /* View */,
 				163AE34329B70596007CAA6B /* Model */,
-				163AE33029B704EB007CAA6B /* ViewController.swift */,
 				163AE33D29B704ED007CAA6B /* Info.plist */,
 				163AE33529B704EB007CAA6B /* BostaTask.xcdatamodeld */,
 			);
@@ -98,6 +101,7 @@
 		163AE34429B7059E007CAA6B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				16BB223629B7110600474711 /* User Profile */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,6 +137,24 @@
 				163AE32E29B704EB007CAA6B /* SceneDelegate.swift */,
 			);
 			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		16BB223629B7110600474711 /* User Profile */ = {
+			isa = PBXGroup;
+			children = (
+				16BB223B29B71AC800474711 /* Cell */,
+				16BB223429B7110000474711 /* UserProfileViewController.swift */,
+			);
+			path = "User Profile";
+			sourceTree = "<group>";
+		};
+		16BB223B29B71AC800474711 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				16BB223729B717C600474711 /* UserAlbumsTableViewCell.swift */,
+				16BB223829B717C600474711 /* UserAlbumsTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1832248E07CA91BBD3C6203B /* Pods */ = {
@@ -225,6 +247,7 @@
 			files = (
 				163AE33C29B704ED007CAA6B /* LaunchScreen.storyboard in Resources */,
 				163AE33929B704ED007CAA6B /* Assets.xcassets in Resources */,
+				16BB223A29B717C600474711 /* UserAlbumsTableViewCell.xib in Resources */,
 				163AE33429B704EB007CAA6B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,10 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				163AE33129B704EB007CAA6B /* ViewController.swift in Sources */,
+				16BB223529B7110000474711 /* UserProfileViewController.swift in Sources */,
 				163AE32D29B704EB007CAA6B /* AppDelegate.swift in Sources */,
 				163AE33729B704EB007CAA6B /* BostaTask.xcdatamodeld in Sources */,
 				163AE32F29B704EB007CAA6B /* SceneDelegate.swift in Sources */,
+				16BB223929B717C600474711 /* UserAlbumsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
