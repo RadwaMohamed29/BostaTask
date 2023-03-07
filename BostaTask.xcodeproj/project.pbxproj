@@ -24,6 +24,13 @@
 		16BB223D29B71D8400474711 /* AlbumDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB223C29B71D8400474711 /* AlbumDetailsViewController.swift */; };
 		16BB224129B71F3C00474711 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB223F29B71F3C00474711 /* PhotoCollectionViewCell.swift */; };
 		16BB224229B71F3C00474711 /* PhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BB224029B71F3C00474711 /* PhotoCollectionViewCell.xib */; };
+		16BB224529B7288100474711 /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB224429B7288100474711 /* APIServices.swift */; };
+		16BB224729B7289600474711 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB224629B7289600474711 /* NetworkManager.swift */; };
+		16BB224929B7290B00474711 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB224829B7290B00474711 /* Constant.swift */; };
+		16BB224C29B7294000474711 /* ResponseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB224B29B7294000474711 /* ResponseError.swift */; };
+		16BB224E29B72C9200474711 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB224D29B72C9200474711 /* User.swift */; };
+		16BB225029B72CA500474711 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB224F29B72CA500474711 /* Album.swift */; };
+		16BB225229B72CC200474711 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BB225129B72CC200474711 /* Photo.swift */; };
 		A992BFD4CD89E64E211EA293 /* Pods_BostaTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D3D55E7181C902523EBEB6 /* Pods_BostaTask.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +49,13 @@
 		16BB223C29B71D8400474711 /* AlbumDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewController.swift; sourceTree = "<group>"; };
 		16BB223F29B71F3C00474711 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		16BB224029B71F3C00474711 /* PhotoCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCollectionViewCell.xib; sourceTree = "<group>"; };
+		16BB224429B7288100474711 /* APIServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		16BB224629B7289600474711 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		16BB224829B7290B00474711 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		16BB224B29B7294000474711 /* ResponseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseError.swift; sourceTree = "<group>"; };
+		16BB224D29B72C9200474711 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		16BB224F29B72CA500474711 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		16BB225129B72CC200474711 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		17D3D55E7181C902523EBEB6 /* Pods_BostaTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BostaTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99FF77CEA6EAF1497D1E11A4 /* Pods-BostaTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BostaTask.release.xcconfig"; path = "Target Support Files/Pods-BostaTask/Pods-BostaTask.release.xcconfig"; sourceTree = "<group>"; };
 		B27C683AE9E5306728326F9B /* Pods-BostaTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BostaTask.debug.xcconfig"; path = "Target Support Files/Pods-BostaTask/Pods-BostaTask.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,6 +99,7 @@
 		163AE32B29B704EB007CAA6B /* BostaTask */ = {
 			isa = PBXGroup;
 			children = (
+				16BB224A29B7291000474711 /* Utilities */,
 				163AE34829B705BA007CAA6B /* App Delegate */,
 				163AE34729B705B4007CAA6B /* Main */,
 				163AE34629B705AE007CAA6B /* Network */,
@@ -100,6 +115,9 @@
 		163AE34329B70596007CAA6B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				16BB224D29B72C9200474711 /* User.swift */,
+				16BB224F29B72CA500474711 /* Album.swift */,
+				16BB225129B72CC200474711 /* Photo.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -123,6 +141,8 @@
 		163AE34629B705AE007CAA6B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				16BB224429B7288100474711 /* APIServices.swift */,
+				16BB224629B7289600474711 /* NetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -180,6 +200,15 @@
 				16BB224029B71F3C00474711 /* PhotoCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		16BB224A29B7291000474711 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				16BB224829B7290B00474711 /* Constant.swift */,
+				16BB224B29B7294000474711 /* ResponseError.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		1832248E07CA91BBD3C6203B /* Pods */ = {
@@ -327,11 +356,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16BB225229B72CC200474711 /* Photo.swift in Sources */,
+				16BB225029B72CA500474711 /* Album.swift in Sources */,
+				16BB224729B7289600474711 /* NetworkManager.swift in Sources */,
 				16BB223529B7110000474711 /* UserProfileViewController.swift in Sources */,
 				163AE32D29B704EB007CAA6B /* AppDelegate.swift in Sources */,
+				16BB224529B7288100474711 /* APIServices.swift in Sources */,
 				163AE33729B704EB007CAA6B /* BostaTask.xcdatamodeld in Sources */,
+				16BB224C29B7294000474711 /* ResponseError.swift in Sources */,
 				163AE32F29B704EB007CAA6B /* SceneDelegate.swift in Sources */,
 				16BB224129B71F3C00474711 /* PhotoCollectionViewCell.swift in Sources */,
+				16BB224E29B72C9200474711 /* User.swift in Sources */,
+				16BB224929B7290B00474711 /* Constant.swift in Sources */,
 				16BB223D29B71D8400474711 /* AlbumDetailsViewController.swift in Sources */,
 				16BB223929B717C600474711 /* UserAlbumsTableViewCell.swift in Sources */,
 			);
