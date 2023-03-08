@@ -82,6 +82,8 @@ class UserProfileViewController: UIViewController {
                 }
                        
             } onError: { _ in
+                KRProgressHUD.dismiss()
+                self.showSnackBar()
                 print(ResponseError.invalidData)
             }.disposed(by: disposeBag)
     }

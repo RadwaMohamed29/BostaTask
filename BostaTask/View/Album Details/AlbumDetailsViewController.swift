@@ -107,10 +107,10 @@ extension AlbumDetailsViewController: UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let yourWidth = collectionView.bounds.width/3.2
-        let yourHeight = yourWidth
+        let width = collectionView.bounds.width/3.5
+        let height = width
         
-        return CGSize(width: yourWidth, height: yourHeight)
+        return CGSize(width: width, height: height)
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
