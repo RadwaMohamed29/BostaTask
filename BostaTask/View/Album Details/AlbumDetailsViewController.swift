@@ -113,4 +113,14 @@ extension AlbumDetailsViewController: UICollectionViewDelegate, UICollectionView
         return CGSize(width: yourWidth, height: yourHeight)
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if let photoVC = storyboard?.instantiateViewController(withIdentifier: "PhotoViewController" ) as? PhotoViewController{
+            photoVC.Url = listOfPhotos[indexPath.row].url
+            photoVC.photoTitle = listOfPhotos[indexPath.row].title
+            
+            navigationController?.pushViewController(photoVC, animated: true)
+        }
+        
+    }
+    
 }

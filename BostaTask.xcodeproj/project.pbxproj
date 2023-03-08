@@ -17,6 +17,7 @@
 		16B353D429B856F5001059AC /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 16B353D329B856F5001059AC /* RxCocoa */; };
 		16B353D629B85B7B001059AC /* HandelConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B353D529B85B7B001059AC /* HandelConnection.swift */; };
 		16B353D829B85BA7001059AC /* Extentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B353D729B85BA7001059AC /* Extentions.swift */; };
+		16B353DA29B868E4001059AC /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B353D929B868E4001059AC /* PhotoViewController.swift */; };
 		16BB222A29B70DD200474711 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 16BB222929B70DD200474711 /* Kingfisher */; };
 		16BB222D29B70E7400474711 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 16BB222C29B70E7400474711 /* CombineMoya */; };
 		16BB222F29B70E7400474711 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 16BB222E29B70E7400474711 /* Moya */; };
@@ -51,6 +52,7 @@
 		16B353CB29B8472A001059AC /* AlbumDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewModel.swift; sourceTree = "<group>"; };
 		16B353D529B85B7B001059AC /* HandelConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandelConnection.swift; sourceTree = "<group>"; };
 		16B353D729B85BA7001059AC /* Extentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extentions.swift; sourceTree = "<group>"; };
+		16B353D929B868E4001059AC /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		16BB223429B7110000474711 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		16BB223729B717C600474711 /* UserAlbumsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAlbumsTableViewCell.swift; sourceTree = "<group>"; };
 		16BB223829B717C600474711 /* UserAlbumsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAlbumsTableViewCell.xib; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 		163AE34429B7059E007CAA6B /* View */ = {
 			isa = PBXGroup;
 			children = (
+				16B353DB29B86942001059AC /* Photo Screen */,
 				16BB223E29B71D8A00474711 /* Album Details */,
 				16BB223629B7110600474711 /* User Profile */,
 			);
@@ -178,6 +181,14 @@
 				163AE32E29B704EB007CAA6B /* SceneDelegate.swift */,
 			);
 			path = "App Delegate";
+			sourceTree = "<group>";
+		};
+		16B353DB29B86942001059AC /* Photo Screen */ = {
+			isa = PBXGroup;
+			children = (
+				16B353D929B868E4001059AC /* PhotoViewController.swift */,
+			);
+			path = "Photo Screen";
 			sourceTree = "<group>";
 		};
 		16BB223629B7110600474711 /* User Profile */ = {
@@ -389,6 +400,7 @@
 				16BB224E29B72C9200474711 /* User.swift in Sources */,
 				16BB224929B7290B00474711 /* Constant.swift in Sources */,
 				16BB223D29B71D8400474711 /* AlbumDetailsViewController.swift in Sources */,
+				16B353DA29B868E4001059AC /* PhotoViewController.swift in Sources */,
 				16BB223929B717C600474711 /* UserAlbumsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

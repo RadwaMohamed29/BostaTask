@@ -149,6 +149,51 @@
             </objects>
             <point key="canvasLocation" x="1726.0869565217392" y="81.696428571428569"/>
         </scene>
+        <!--Photo View Controller-->
+        <scene sceneID="7Va-VS-STV">
+            <objects>
+                <viewController storyboardIdentifier="PhotoViewController" id="mMN-G7-PSR" customClass="PhotoViewController" customModule="BostaTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DOp-MA-E72">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" maximumZoomScale="13" translatesAutoresizingMaskIntoConstraints="NO" id="9ba-qY-lca">
+                                <rect key="frame" x="0.0" y="39" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Ym-V4-5I3">
+                                        <rect key="frame" x="8" y="0.0" width="398" height="818"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="7Ym-V4-5I3" firstAttribute="leading" secondItem="9ba-qY-lca" secondAttribute="leadingMargin" id="0kR-N0-xWA"/>
+                                    <constraint firstItem="7Ym-V4-5I3" firstAttribute="height" secondItem="9ba-qY-lca" secondAttribute="height" id="959-cR-5A2"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Ym-V4-5I3" secondAttribute="bottom" constant="230" id="AZU-mc-wSu"/>
+                                    <constraint firstItem="7Ym-V4-5I3" firstAttribute="trailing" secondItem="9ba-qY-lca" secondAttribute="trailingMargin" id="P7E-Z7-veG"/>
+                                    <constraint firstItem="7Ym-V4-5I3" firstAttribute="centerY" secondItem="9ba-qY-lca" secondAttribute="centerY" id="f2t-UT-I0Z"/>
+                                    <constraint firstItem="7Ym-V4-5I3" firstAttribute="width" secondItem="9ba-qY-lca" secondAttribute="width" multiplier="0.961353" id="up0-2m-qZy"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="7w4-JV-ZRm"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="v5R-qj-vPM"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mZE-fR-lxd"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9ba-qY-lca" firstAttribute="centerY" secondItem="DOp-MA-E72" secondAttribute="centerY" id="7bq-20-OYf"/>
+                            <constraint firstItem="mZE-fR-lxd" firstAttribute="bottom" secondItem="9ba-qY-lca" secondAttribute="bottom" constant="5" id="Fct-mJ-Pj7"/>
+                            <constraint firstItem="9ba-qY-lca" firstAttribute="centerX" secondItem="DOp-MA-E72" secondAttribute="centerX" id="Khc-wH-0Bd"/>
+                            <constraint firstItem="9ba-qY-lca" firstAttribute="leading" secondItem="mZE-fR-lxd" secondAttribute="leading" id="zbk-18-aWf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="image" destination="7Ym-V4-5I3" id="5zA-U6-yih"/>
+                        <outlet property="scrollView" destination="9ba-qY-lca" id="Pqr-Zv-UUU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kue-4F-Ac6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2447" y="81"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="0Tn-vC-Sax">
             <objects>
