@@ -27,12 +27,12 @@ class UserProfileViewController: UIViewController {
         albumsTV.delegate = self
         albumsTV.dataSource = self
         checkConnection()
- 
         
-       
         
-
-       
+        
+        
+        
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -65,13 +65,13 @@ class UserProfileViewController: UIViewController {
         }
         
     }
-
+    
     
     func getUser(){
         KRProgressHUD.show()
         userProfile.getUser()
         userProfile.userObservable.subscribe(on:
-        ConcurrentDispatchQueueScheduler.init(qos: .background))
+                                                ConcurrentDispatchQueueScheduler.init(qos: .background))
             .observe(on: MainScheduler.asyncInstance)
             .subscribe{userDetails in
                 KRProgressHUD.dismiss()
@@ -80,7 +80,7 @@ class UserProfileViewController: UIViewController {
                     userNameLbl.text = user?.name
                     userAddressLbl.text = ("\(user?.address.street ?? " "), \( user?.address.suite ?? " "), \( user?.address.city ?? " "), \( user?.address.zipcode ?? " ")")
                 }
-                       
+                
             } onError: { _ in
                 KRProgressHUD.dismiss()
                 self.showSnackBar()
@@ -91,20 +91,20 @@ class UserProfileViewController: UIViewController {
     func getUserAlbums(ID: String){
         userProfile.getUserAlbums(userID: ID)
         userProfile.albumsObservable.subscribe(on:
-        ConcurrentDispatchQueueScheduler.init(qos: .background))
+                                                ConcurrentDispatchQueueScheduler.init(qos: .background))
             .observe(on: MainScheduler.asyncInstance)
             .subscribe{ [self]album in
                 listOfAlbums = album
                 albumsTV.reloadData()
-                       
+                
             } onError: { _ in
                 print(ResponseError.invalidData)
             }.disposed(by: disposeBag)
     }
     
-
-
-
+    
+    
+    
 }
 extension UserProfileViewController: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
