@@ -7,6 +7,7 @@
 
 import UIKit
 import RxSwift
+import RxCocoa
 import Kingfisher
 import KRProgressHUD
 
@@ -26,7 +27,7 @@ class AlbumDetailsViewController: UIViewController {
         photosCV.register(PhotoCell, forCellWithReuseIdentifier: "PhotoCollectionViewCell")
         self.photosCV.delegate=self
         self.photosCV.dataSource=self
-        //setUpCell()
+        setubSearchBar()
         getAllPhotos(ID: albumID ?? "")
 
         
@@ -46,6 +47,14 @@ class AlbumDetailsViewController: UIViewController {
             } onError: { _ in
                 print(ResponseError.invalidData)
             }.disposed(by: disposeBag)
+    }
+    
+    func setubSearchBar(){
+        searchBar.rx.text.orEmpty.throttle(RxTimeInterval.microseconds(500), scheduler: MainScheduler.asyncInstance)
+            .distinctUntilChanged()
+            .subscribe { result in
+                self.albumDetail.searchWithWord(word: result)
+            } .disposed(by: disposeBag)
     }
     
     

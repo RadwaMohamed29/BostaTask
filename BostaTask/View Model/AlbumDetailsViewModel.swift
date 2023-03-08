@@ -10,9 +10,11 @@ import RxSwift
 protocol AlbumDetailsViewModelProtocol{
     var photoObservable: Observable<Photos>{get set}
     func getPhotos(albumID: String)
+    func searchWithWord(word:String)
 }
 
 class AlbumDetailsViewModel: AlbumDetailsViewModelProtocol{
+    
     var photoObservable: Observable<Photos>
     private var photoSubject: PublishSubject = PublishSubject<Photos>()
     private let networkManager: NetworkManager
@@ -38,5 +40,14 @@ class AlbumDetailsViewModel: AlbumDetailsViewModelProtocol{
         })
     }
     
-    
+    func searchWithWord(word: String) {
+        if word.isEmpty{
+            photoSubject.onNext(listOfPhotos)
+            return
+        }
+        let filteredPhotos = listOfPhotos.filter { photoSearch in
+            return photoSearch.title.lowercased().trimmingCharacters(in: .whitespacesAndNewlines).contains(word.lowercased().trimmingCharacters(in: .whitespacesAndNewlines))
+        }
+        photoSubject.onNext(filteredPhotos)
+    }
 }
