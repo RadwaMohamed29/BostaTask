@@ -28,17 +28,17 @@ class NetworkManager: Networkable{
         request(target: .getUser, completion: completion)
     }
     
-
+    
     
     var provider = MoyaProvider<APIService>( plugins: [NetworkLoggerPlugin()])
     
-  
+    
     
 }
 
 extension NetworkManager{
     private func request<T:Codable>(target: APIService, completion:
-                                     @escaping (Result<T, ResponseError>) -> Void){
+                                    @escaping (Result<T, ResponseError>) -> Void){
         provider.request(target) { result in
             switch result{
             case let .success(response):
@@ -52,7 +52,7 @@ extension NetworkManager{
             case .failure(_):
                 completion(.failure(.invalidData))
             }
-
+            
         }
     }
 }

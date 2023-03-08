@@ -30,14 +30,14 @@ class PhotoViewController: UIViewController {
         activityViewController.popoverPresentationController?.barButtonItem = barButtonItem
         present(activityViewController, animated: true, completion: nil)
     }
-
+    
     @objc func shareDataTapped(){
         guard let photoURL = Url else{ return }
         shareData(data: [photoURL], barButtonItem: navigationItem.rightBarButtonItem)
     }
-
-
-
+    
+    
+    
 }
 
 extension PhotoViewController: UIScrollViewDelegate{
