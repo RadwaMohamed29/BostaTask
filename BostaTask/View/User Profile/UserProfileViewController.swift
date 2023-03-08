@@ -87,5 +87,14 @@ extension UserProfileViewController: UITableViewDelegate, UITableViewDataSource{
         return 100
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let albumDetailsVC = storyboard?.instantiateViewController(withIdentifier: "AlbumDetailsViewController" ) as? AlbumDetailsViewController{
+            albumDetailsVC.albumID = "\(listOfAlbums[indexPath.row].id)"
+            albumDetailsVC.albumTitle = listOfAlbums[indexPath.row].title
+            
+            navigationController?.pushViewController(albumDetailsVC, animated: true)
+        }
+    }
+    
     
 }

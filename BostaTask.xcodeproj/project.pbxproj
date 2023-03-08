@@ -13,6 +13,7 @@
 		163AE33729B704EB007CAA6B /* BostaTask.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 163AE33529B704EB007CAA6B /* BostaTask.xcdatamodeld */; };
 		163AE33929B704ED007CAA6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 163AE33829B704ED007CAA6B /* Assets.xcassets */; };
 		163AE33C29B704ED007CAA6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 163AE33A29B704ED007CAA6B /* LaunchScreen.storyboard */; };
+		16B353CC29B8472A001059AC /* AlbumDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B353CB29B8472A001059AC /* AlbumDetailsViewModel.swift */; };
 		16BB222A29B70DD200474711 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 16BB222929B70DD200474711 /* Kingfisher */; };
 		16BB222D29B70E7400474711 /* CombineMoya in Frameworks */ = {isa = PBXBuildFile; productRef = 16BB222C29B70E7400474711 /* CombineMoya */; };
 		16BB222F29B70E7400474711 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 16BB222E29B70E7400474711 /* Moya */; };
@@ -44,6 +45,7 @@
 		163AE33829B704ED007CAA6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		163AE33B29B704ED007CAA6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		163AE33D29B704ED007CAA6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16B353CB29B8472A001059AC /* AlbumDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewModel.swift; sourceTree = "<group>"; };
 		16BB223429B7110000474711 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		16BB223729B717C600474711 /* UserAlbumsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAlbumsTableViewCell.swift; sourceTree = "<group>"; };
 		16BB223829B717C600474711 /* UserAlbumsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserAlbumsTableViewCell.xib; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				16BB225329B73CF000474711 /* UserProfileViewModel.swift */,
+				16B353CB29B8472A001059AC /* AlbumDetailsViewModel.swift */,
 			);
 			path = "View Model";
 			sourceTree = "<group>";
@@ -368,6 +371,7 @@
 				16BB224529B7288100474711 /* APIServices.swift in Sources */,
 				163AE33729B704EB007CAA6B /* BostaTask.xcdatamodeld in Sources */,
 				16BB224C29B7294000474711 /* ResponseError.swift in Sources */,
+				16B353CC29B8472A001059AC /* AlbumDetailsViewModel.swift in Sources */,
 				163AE32F29B704EB007CAA6B /* SceneDelegate.swift in Sources */,
 				16BB224129B71F3C00474711 /* PhotoCollectionViewCell.swift in Sources */,
 				16BB224E29B72C9200474711 /* User.swift in Sources */,

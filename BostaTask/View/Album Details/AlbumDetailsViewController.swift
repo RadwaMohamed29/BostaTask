@@ -6,22 +6,48 @@
 //
 
 import UIKit
+import RxSwift
+import Kingfisher
+import KRProgressHUD
 
 class AlbumDetailsViewController: UIViewController {
 
     @IBOutlet weak var photosCV: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
+    var albumID: String?
+    var albumTitle: String?
+    var albumDetail: AlbumDetailsViewModelProtocol = AlbumDetailsViewModel()
+    let disposeBag = DisposeBag()
+    var listOfPhotos : Photos = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Album Name"
+        self.title = albumTitle
         let PhotoCell = UINib(nibName: "PhotoCollectionViewCell", bundle: nil)
         photosCV.register(PhotoCell, forCellWithReuseIdentifier: "PhotoCollectionViewCell")
         self.photosCV.delegate=self
         self.photosCV.dataSource=self
-        setUpCell()
+        //setUpCell()
+        getAllPhotos(ID: albumID ?? "")
 
         
     }
+    
+    func getAllPhotos(ID: String){
+        KRProgressHUD.show()
+        albumDetail.getPhotos(albumID: ID)
+        albumDetail.photoObservable.subscribe(on:
+        ConcurrentDispatchQueueScheduler.init(qos: .background))
+            .observe(on: MainScheduler.asyncInstance)
+            .subscribe{ [self] photo in
+                KRProgressHUD.dismiss()
+                listOfPhotos = photo
+                photosCV.reloadData()
+                       
+            } onError: { _ in
+                print(ResponseError.invalidData)
+            }.disposed(by: disposeBag)
+    }
+    
     
 
 
@@ -30,23 +56,25 @@ class AlbumDetailsViewController: UIViewController {
 
 extension AlbumDetailsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return listOfPhotos.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PhotoCollectionViewCell", for: indexPath) as! PhotoCollectionViewCell
+        
+        let url = URL(string: listOfPhotos[indexPath.row].url )
+        cell.photoImageView.kf.setImage(with: url)
 
         return cell
     }
-    func setUpCell(){
-        if let layout = photosCV?.collectionViewLayout as? UICollectionViewFlowLayout{
-                layout.minimumLineSpacing = 10
-                layout.minimumInteritemSpacing = 10
-                layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
-                let size = CGSize(width:(photosCV!.bounds.width-30)/2, height: 250)
-                layout.itemSize = size
-        }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let yourWidth = collectionView.bounds.width/3.2
+        let yourHeight = yourWidth
+
+        return CGSize(width: yourWidth, height: yourHeight)
     }
+
 
     
     
