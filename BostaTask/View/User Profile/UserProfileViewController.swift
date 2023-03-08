@@ -11,6 +11,7 @@ import KRProgressHUD
 
 class UserProfileViewController: UIViewController {
 
+    @IBOutlet var viewContainer: UIView!
     @IBOutlet weak var albumsTV: UITableView!
     @IBOutlet weak var userAddressLbl: UILabel!
     @IBOutlet weak var userNameLbl: UILabel!
@@ -18,18 +19,53 @@ class UserProfileViewController: UIViewController {
     let disposeBag = DisposeBag()
     var user: User?
     var listOfAlbums : UserAlbums = []
+    private  var isConn:Bool = false
+    private  let refreshController = UIRefreshControl()
     override func viewDidLoad() {
         super.viewDidLoad()
         albumsTV.register(UINib(nibName: "UserAlbumsTableViewCell", bundle: nil), forCellReuseIdentifier: "UserAlbumsTableViewCell")
         albumsTV.delegate = self
         albumsTV.dataSource = self
-        getUser()
-        getUserAlbums(ID: "\(user?.id ?? 2)")
+        checkConnection()
+ 
+        
        
         
 
        
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        refreshController.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
+        albumsTV.addSubview(refreshController)
+        checkConnection()
+    }
+    func checkConnection(){
+        HandelConnection.handelConnection.checkNetworkConnection { [self] isConnected in
+            isConn = isConnected
+            if isConnected{
+                getUser()
+                getUserAlbums(ID: "\(user?.id ?? 2)")
+            }else{
+                showSnackBar()
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.refreshController.endRefreshing()
+            }
+        }
+        
+    }
+    @objc func pullToRefresh(){
+        refreshController.beginRefreshing()
+        checkConnection()
+        DispatchQueue.main.asyncAfter(deadline: .now()+5) {
+            if self.refreshController.isRefreshing{
+                self.refreshController.endRefreshing()
+            }
+        }
+        
+    }
+
     
     func getUser(){
         KRProgressHUD.show()

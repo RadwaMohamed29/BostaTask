@@ -12,7 +12,8 @@ import Kingfisher
 import KRProgressHUD
 
 class AlbumDetailsViewController: UIViewController {
-
+    
+    @IBOutlet var viewContainer: UIView!
     @IBOutlet weak var photosCV: UICollectionView!
     @IBOutlet weak var searchBar: UISearchBar!
     var albumID: String?
@@ -20,6 +21,8 @@ class AlbumDetailsViewController: UIViewController {
     var albumDetail: AlbumDetailsViewModelProtocol = AlbumDetailsViewModel()
     let disposeBag = DisposeBag()
     var listOfPhotos : Photos = []
+    private  var isConn:Bool = false
+    private  let refreshController = UIRefreshControl()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = albumTitle
@@ -28,8 +31,37 @@ class AlbumDetailsViewController: UIViewController {
         self.photosCV.delegate=self
         self.photosCV.dataSource=self
         setubSearchBar()
-        getAllPhotos(ID: albumID ?? "")
-
+        checkConnection()
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        refreshController.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
+        photosCV.addSubview(refreshController)
+        checkConnection()
+    }
+    func checkConnection(){
+        HandelConnection.handelConnection.checkNetworkConnection { [self] isConnected in
+            isConn = isConnected
+            if isConnected{
+                getAllPhotos(ID: albumID ?? "")
+            }else{
+                showSnackBar()
+            }
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                self.refreshController.endRefreshing()
+            }
+        }
+        
+    }
+    @objc func pullToRefresh(){
+        refreshController.beginRefreshing()
+        checkConnection()
+        DispatchQueue.main.asyncAfter(deadline: .now()+5) {
+            if self.refreshController.isRefreshing{
+                self.refreshController.endRefreshing()
+            }
+        }
         
     }
     
@@ -37,13 +69,13 @@ class AlbumDetailsViewController: UIViewController {
         KRProgressHUD.show()
         albumDetail.getPhotos(albumID: ID)
         albumDetail.photoObservable.subscribe(on:
-        ConcurrentDispatchQueueScheduler.init(qos: .background))
+                                                ConcurrentDispatchQueueScheduler.init(qos: .background))
             .observe(on: MainScheduler.asyncInstance)
             .subscribe{ [self] photo in
                 KRProgressHUD.dismiss()
                 listOfPhotos = photo
                 photosCV.reloadData()
-                       
+                
             } onError: { _ in
                 print(ResponseError.invalidData)
             }.disposed(by: disposeBag)
@@ -58,9 +90,6 @@ class AlbumDetailsViewController: UIViewController {
     }
     
     
-
-
-
 }
 
 extension AlbumDetailsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -73,18 +102,15 @@ extension AlbumDetailsViewController: UICollectionViewDelegate, UICollectionView
         
         let url = URL(string: listOfPhotos[indexPath.row].url )
         cell.photoImageView.kf.setImage(with: url)
-
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let yourWidth = collectionView.bounds.width/3.2
         let yourHeight = yourWidth
-
+        
         return CGSize(width: yourWidth, height: yourHeight)
     }
-
-
-    
     
 }

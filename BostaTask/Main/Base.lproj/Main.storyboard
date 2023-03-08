@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AFd-yj-Qvl">
-                                <rect key="frame" x="10" y="88" width="384" height="50"/>
+                                <rect key="frame" x="10" y="88" width="384" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Svi-px-W2o"/>
                                 </constraints>
@@ -26,19 +26,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LN-JR-qAp">
-                                <rect key="frame" x="10" y="168" width="384" height="50"/>
+                                <rect key="frame" x="10" y="159" width="384" height="41"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wc7-aA-ZdY">
-                                <rect key="frame" x="10" y="172.5" width="384" height="71.5"/>
+                                <rect key="frame" x="10" y="129" width="384" height="59"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Albums" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brr-hs-vkS">
-                                <rect key="frame" x="10" y="268" width="384" height="45"/>
+                                <rect key="frame" x="10" y="212" width="384" height="36.5"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="THg-MT-cdq"/>
                                 </constraints>
@@ -47,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="36y-jt-dl0">
-                                <rect key="frame" x="10" y="323" width="394" height="539"/>
+                                <rect key="frame" x="10" y="258.5" width="394" height="442"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
@@ -86,6 +86,7 @@
                         <outlet property="albumsTV" destination="36y-jt-dl0" id="W8m-Ik-Mpo"/>
                         <outlet property="userAddressLbl" destination="wc7-aA-ZdY" id="lCu-mO-yop"/>
                         <outlet property="userNameLbl" destination="4LN-JR-qAp" id="V43-iG-6Dx"/>
+                        <outlet property="viewContainer" destination="8bC-Xf-vdC" id="lsD-Up-ryY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -141,6 +142,7 @@
                     <connections>
                         <outlet property="photosCV" destination="V7g-bm-PG2" id="bPs-14-8SZ"/>
                         <outlet property="searchBar" destination="QC3-PS-UcM" id="rU9-AM-bZy"/>
+                        <outlet property="viewContainer" destination="HyO-3u-QoS" id="qur-DZ-0vh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UeC-M5-BwI" sceneMemberID="firstResponder"/>
